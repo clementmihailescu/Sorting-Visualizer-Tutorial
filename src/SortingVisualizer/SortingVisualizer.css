@@ -4,8 +4,45 @@
   /* top: 100px; */
 }
 
-.array-bar {
-  width: 2px;
+.main-layout {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 800px min-content;
+}
+
+.bars-pane {
+  margin: 30px;
+}
+
+.bar {
+  width: 10px;
   display: inline-block;
   margin: 0 1px;
+}
+
+.btn-pane {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+  column-gap: 15px;
+}
+
+.fancy-btn {
+  background-color: #072227;
+  color: #aefeff;
+  border: 2px solid #aefeff;
+  padding: 16px 32px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.fancy-btn:hover {
+  background-color: #aefeff;
+  color: #072227;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
